@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f9;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="#" method="POST">
+        <h2>Form Elements</h2>
+
+        <!-- Text Input -->
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <!-- Email Input -->
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <!-- Password Input -->
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+
+        <!-- Date Input -->
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+
+        <!-- Select Dropdown -->
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+            </select>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div class="form-group">
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="form-group">
+            <label>Hobbies:</label>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+            <label for="traveling">Traveling</label>
+            <input type="checkbox" id="sports" name="hobbies" value="sports">
+            <label for="sports">Sports</label>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here"></textarea>
+        </div>
+
+        <!-- File Input -->
+        <div class="form-group">
+            <label for="file">Upload File:</label>
+            <input type="file" id="file" name="file">
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
